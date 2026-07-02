@@ -123,9 +123,7 @@ export async function getLatestAttestation(contractId: string): Promise<Attestat
   }
 }
 
-export async function getAttestationHistory(
-  contractId: string,
-): Promise<Attestation[]> {
+export async function getAttestationHistory(contractId: string): Promise<Attestation[]> {
   try {
     const server = createServer();
     const contract = new Contract(contractId);

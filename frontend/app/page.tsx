@@ -20,9 +20,7 @@ export default function Home() {
   const [refreshing, setRefreshing] = useState(false);
 
   const sorted = sortByCoverage(companies);
-  const insolventCompanies = sorted.filter(
-    (c) => c.attestation && !c.attestation.solvent,
-  );
+  const insolventCompanies = sorted.filter((c) => c.attestation && !c.attestation.solvent);
 
   async function fetchData() {
     try {
@@ -116,17 +114,12 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <span className="mt-0.5 text-xl">🚨</span>
                   <div>
-                    <p className="font-bold text-red-800 dark:text-red-300">
-                      Insolvency Detected!
-                    </p>
+                    <p className="font-bold text-red-800 dark:text-red-300">Insolvency Detected!</p>
                     <p className="text-sm text-red-700 dark:text-red-400">
-                      {insolventCompanies
-                        .map((c) => c.info.name)
-                        .join(", ")}{" "}
-                      {insolventCompanies.length === 1 ? "has" : "have"}{" "}
-                      insufficient reserves to cover liabilities. Coverage
-                      ratio{insolventCompanies.length === 1 ? " is" : "s are"}{" "}
-                      below 100%.
+                      {insolventCompanies.map((c) => c.info.name).join(", ")}{" "}
+                      {insolventCompanies.length === 1 ? "has" : "have"} insufficient reserves to
+                      cover liabilities. Coverage ratio
+                      {insolventCompanies.length === 1 ? " is" : "s are"} below 100%.
                     </p>
                   </div>
                 </div>
@@ -177,7 +170,8 @@ export default function Home() {
                             rel="noopener noreferrer"
                             className="font-mono text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400"
                           >
-                            {company.info.contractId.slice(0, 12)}…{company.info.contractId.slice(-6)} ↗
+                            {company.info.contractId.slice(0, 12)}…
+                            {company.info.contractId.slice(-6)} ↗
                           </a>
                         </div>
                         <span
