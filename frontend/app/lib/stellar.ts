@@ -1,10 +1,4 @@
-import {
-  rpc,
-  Contract,
-  TransactionBuilder,
-  Networks,
-  scValToNative,
-} from "@stellar/stellar-sdk";
+import { rpc, Contract, TransactionBuilder, Networks, scValToNative } from "@stellar/stellar-sdk";
 
 const CONTRACT_ID = "CBNMJDIEVKLVP2N6XVUCWDQATOXUVQ743C6W3BYYJMIMNFPBRWWGNLJG";
 const RPC_URL = "https://soroban-testnet.stellar.org";
@@ -34,7 +28,7 @@ function createContract() {
 }
 
 function getSimResult(
-  result: rpc.Api.SimulateTransactionResponse
+  result: rpc.Api.SimulateTransactionResponse,
 ): { retval: any; auth: any[] } | null {
   if ("error" in result || !("result" in result)) return null;
   const r = (result as any).result;
