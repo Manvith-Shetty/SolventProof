@@ -21,10 +21,7 @@ export default function Home() {
   async function fetchData() {
     try {
       setError(null);
-      const [att, cfg] = await Promise.all([
-        getLatestAttestation(),
-        getContractConfig(),
-      ]);
+      const [att, cfg] = await Promise.all([getLatestAttestation(), getContractConfig()]);
       setAttestation(att);
       setConfig(cfg);
     } catch (e) {
@@ -73,21 +70,21 @@ export default function Home() {
             Real‑World ZK on Stellar
           </h2>
           <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-            An issuer proves on-chain reserves ≥ customer liabilities without
-            revealing a single customer balance — verified inside a Soroban
-            smart contract using Groth16 proofs and Stellar&apos;s native
-            BLS12-381 host functions.
+            An issuer proves on-chain reserves ≥ customer liabilities without revealing a single
+            customer balance — verified inside a Soroban smart contract using Groth16 proofs and
+            Stellar&apos;s native BLS12-381 host functions.
           </p>
         </div>
 
         {/* Contract Info */}
         <div className="mb-8 rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <span className="text-sm text-zinc-500 dark:text-zinc-400">
-              Contract
-            </span>
+            <span className="text-sm text-zinc-500 dark:text-zinc-400">Contract</span>
             <a
-              href={explorerUrl("contract", "CBNMJDIEVKLVP2N6XVUCWDQATOXUVQ743C6W3BYYJMIMNFPBRWWGNLJG")}
+              href={explorerUrl(
+                "contract",
+                "CBNMJDIEVKLVP2N6XVUCWDQATOXUVQ743C6W3BYYJMIMNFPBRWWGNLJG",
+              )}
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
@@ -174,9 +171,7 @@ export default function Home() {
                     <h4 className="mb-1 font-medium text-zinc-900 dark:text-zinc-100">
                       {item.title}
                     </h4>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                      {item.desc}
-                    </p>
+                    <p className="text-sm text-zinc-600 dark:text-zinc-400">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -188,12 +183,15 @@ export default function Home() {
                   Live Demo
                 </h3>
                 <p className="mb-4 text-sm text-zinc-600 dark:text-zinc-400">
-                  This contract is live on Stellar testnet. The attestation
-                  above was verified on-chain.
+                  This contract is live on Stellar testnet. The attestation above was verified
+                  on-chain.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href={explorerUrl("contract", "CBNMJDIEVKLVP2N6XVUCWDQATOXUVQ743C6W3BYYJMIMNFPBRWWGNLJG")}
+                    href={explorerUrl(
+                      "contract",
+                      "CBNMJDIEVKLVP2N6XVUCWDQATOXUVQ743C6W3BYYJMIMNFPBRWWGNLJG",
+                    )}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-lg border border-zinc-200 px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
@@ -217,7 +215,7 @@ export default function Home() {
                           total_liabilities: attestation.total_liabilities,
                         },
                         null,
-                        2
+                        2,
                       )}
                     </pre>
                   </div>
