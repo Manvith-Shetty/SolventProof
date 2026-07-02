@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 import AttestationCard from "./components/AttestationCard";
+import AttestationHistory from "./components/AttestationHistory";
+import FraudDemo from "./components/FraudDemo";
+import CustomerCheck from "./components/CustomerCheck";
 import {
   Attestation,
   ContractConfig,
@@ -175,6 +178,21 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+            </section>
+
+            {/* Fraud Demo */}
+            <section className="mb-8">
+              <FraudDemo />
+            </section>
+
+            {/* Attestation History */}
+            <section className="mb-8">
+              <AttestationHistory />
+            </section>
+
+            {/* Customer Check */}
+            <section className="mb-8">
+              <CustomerCheck att={attestation} />
             </section>
 
             {attestation && (
