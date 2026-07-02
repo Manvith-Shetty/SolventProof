@@ -10,13 +10,13 @@ Built for **Stellar Hacks: Real-World ZK**.
 
 ## 🚀 Live on Testnet
 
-| Company               | Contract                                                                                                                       | Reserve     | Owes           | Status           |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------- | -------------- | ---------------- |
-| **StellarX Exchange** | [`CA3RMVFY…CKWZFO`](https://stellar.expert/explorer/testnet/contract/CA3RMVFYCYNKHKUCN3M6QAIGIGZTAGNUNG4AZWZHR4MTHOGVFRCKWZFO) | 9,999 XLM   | 2,800 XLM      | ✅ SOLVENT       |
-| **LumensBank**        | [`CDEZEY4Q…W275P`](https://stellar.expert/explorer/testnet/contract/CDEZEY4Q7JI3GWGNWDXLZFQYOBI5OVDO4UK5CZG23SN4QQA67TVW275P)  | 9,999 XLM   | 2,800 XLM      | ✅ SOLVENT       |
-| **NovaFi**            | [`CDKA4TOJ…TBJGJ`](https://stellar.expert/explorer/testnet/contract/CDKA4TOJVB2DZ5PJCCOSD3TQXMF4AGZWDBMZXIX2B4VBAAP2EEBTBJGJ)  | 9,999 XLM   | **27,000 XLM** | ❌ **INSOLVENT** |
-| **TrustLine Capital** | [`CCIOFFL…2RFY`](https://stellar.expert/explorer/testnet/contract/CCIOFFLRX5XCUQRA2T6RRVIKEF7FSOJKMKZ5QUQOI2C7L2YQ3DTQ2RFY)    | 9,999 XLM   | 2,800 XLM      | ✅ SOLVENT       |
-| **VaultSphere**       | [`CAH7KP6…JAXK`](https://stellar.expert/explorer/testnet/contract/CAH7KP6ZQ32TK3GZC5HKV6XE7JGYCKD7ESVOFWWZOJPM4Y7MKXO2JAXK)    | 9,999 XLM   | **27,000 XLM** | ❌ **INSOLVENT** |
+| Company               | Contract                                                                                                                       | Reserve   | Owes           | Status           |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- | -------------- | ---------------- |
+| **StellarX Exchange** | [`CA3RMVFY…CKWZFO`](https://stellar.expert/explorer/testnet/contract/CA3RMVFYCYNKHKUCN3M6QAIGIGZTAGNUNG4AZWZHR4MTHOGVFRCKWZFO) | 9,999 XLM | 2,800 XLM      | ✅ SOLVENT       |
+| **LumensBank**        | [`CDEZEY4Q…W275P`](https://stellar.expert/explorer/testnet/contract/CDEZEY4Q7JI3GWGNWDXLZFQYOBI5OVDO4UK5CZG23SN4QQA67TVW275P)  | 9,999 XLM | 2,800 XLM      | ✅ SOLVENT       |
+| **NovaFi**            | [`CDKA4TOJ…TBJGJ`](https://stellar.expert/explorer/testnet/contract/CDKA4TOJVB2DZ5PJCCOSD3TQXMF4AGZWDBMZXIX2B4VBAAP2EEBTBJGJ)  | 9,999 XLM | **27,000 XLM** | ❌ **INSOLVENT** |
+| **TrustLine Capital** | [`CCIOFFL…2RFY`](https://stellar.expert/explorer/testnet/contract/CCIOFFLRX5XCUQRA2T6RRVIKEF7FSOJKMKZ5QUQOI2C7L2YQ3DTQ2RFY)    | 9,999 XLM | 2,800 XLM      | ✅ SOLVENT       |
+| **VaultSphere**       | [`CAH7KP6…JAXK`](https://stellar.expert/explorer/testnet/contract/CAH7KP6ZQ32TK3GZC5HKV6XE7JGYCKD7ESVOFWWZOJPM4Y7MKXO2JAXK)    | 9,999 XLM | **27,000 XLM** | ❌ **INSOLVENT** |
 
 ---
 
