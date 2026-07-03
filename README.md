@@ -1,4 +1,4 @@
-# Aegis — Confidential Proof-of-Reserves on Stellar
+# SolventProof — Confidential Proof-of-Reserves on Stellar
 
 **Demo video:** [here](https://www.youtube.com/watch?v=aRc_Eb_k97c)
 
